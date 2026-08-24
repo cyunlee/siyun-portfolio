@@ -217,8 +217,8 @@
     .process-flow::before{content:'';position:absolute;top:1.25rem;left:12.5%;right:12.5%;height:2px;background:var(--border);z-index:1;}
   }
   .process-step{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;}
-  @media (min-width:860px){.process-step{flex:1;padding-inline:1rem;}}
-  .process-step .node{position:relative;margin-bottom:1.25rem;width:2.5rem;height:2.5rem;border-radius:999px;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;z-index:2;flex-shrink:0;}
+  @media (min-width:860px){.process-step{flex:1 1 0;min-width:0;padding-inline:1rem;}}
+  .process-step .node{position:relative;margin-bottom:1.25rem;width:2.5rem;height:2.5rem;border-radius:999px;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;z-index:2;flex-shrink:0;box-shadow:0 0 0 6px var(--bg);}
   .process-step h3{font-size:1.1rem;font-weight:700;}
   .process-step p{margin-top:.5rem;color:var(--muted);font-size:.85rem;line-height:1.65;max-width:22ch;}
 
