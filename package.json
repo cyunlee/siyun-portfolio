@@ -1,0 +1,8 @@
+{
+  "name": "siyun-portfolio",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@vercel/functions": "^1.5.0"
+  }
+}
