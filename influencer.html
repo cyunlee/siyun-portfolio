@@ -244,7 +244,8 @@
   /* ---------- contact ---------- */
   .cta{position:relative;text-align:center;overflow:hidden;padding-block:clamp(5rem,10vw,8rem);}
   .cta-orb{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,150vw);height:480px;background:radial-gradient(closest-side, var(--b-soft), transparent 72%);filter:blur(40px);z-index:-1;}
-  .cta h2{font-size:clamp(1.9rem,4.6vw,3.4rem);font-weight:700;letter-spacing:-0.03em;line-height:1.18;max-width:27ch;margin-inline:auto;}
+  .cta h2{font-size:clamp(1.9rem,4.6vw,3.4rem);font-weight:700;letter-spacing:-0.03em;line-height:1.18;max-width:none;margin-inline:auto;}
+  .cta h2 .cta-title-line{display:block;white-space:nowrap;font-size:clamp(1rem,4.6vw,3.4rem);}
   .cta-contacts{margin-top:2rem;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;}
   .cta-contacts a{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--muted);font-weight:600;transition:color .3s var(--ease);}
   .cta-contacts a:hover{color:var(--b);}
@@ -663,7 +664,7 @@
       <div class="cta-orb" aria-hidden="true"></div>
       <div class="wrap">
         <div class="reveal">
-          <h2>Influencer Marketer that helps K-brands<span class="serif" style="display:block;font-size:.6em;margin-top:.25em;color:var(--muted);">enter &amp; grow in the global market.</span></h2>
+          <h2><span class="cta-title-line">Influencer Marketer that helps K-brands</span><span class="serif" style="display:block;font-size:.6em;margin-top:.25em;color:var(--muted);">enter &amp; grow in the global market.</span></h2>
           <div class="cta-contacts">
             <a href="mailto:siyunkr@gmail.com"><svg class="icon" width="14" height="14"><use href="#i-mail"/></svg>siyunkr@gmail.com</a>
             <a href="tel:010-8929-3717"><svg class="icon" width="14" height="14"><use href="#i-phone"/></svg><span class="tabular">010-8929-3717</span></a>
