@@ -17,7 +17,7 @@ export default function middleware(request) {
     return rewrite(new URL('/influencer.html', request.url));
   }
 
-  if (host === 'siyunlee.vercel.app') {
+  if (host === 'siyunlee-portfolio.vercel.app') {
     return rewrite(new URL('/performance-marketer.html', request.url));
   }
 
