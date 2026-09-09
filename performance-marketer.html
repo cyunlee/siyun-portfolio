@@ -124,7 +124,7 @@
   /* ---------- worked-with strip ---------- */
   .strip{padding-block:2.25rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:color-mix(in srgb, var(--surface) 55%, transparent);}
   .strip-viewport{overflow:hidden;}
-  .strip-row{display:flex;flex-wrap:nowrap;gap:clamp(1.75rem,4vw,3.5rem);align-items:center;width:max-content;animation:strip-scroll 32s linear infinite;}
+  .strip-row{display:flex;flex-wrap:nowrap;gap:clamp(1.75rem,4vw,3.5rem);align-items:center;width:max-content;animation:strip-scroll 16s linear infinite;}
   .strip-row:hover{animation-play-state:paused;}
   @keyframes strip-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @media (prefers-reduced-motion:reduce){.strip-row{animation:none;}}
