@@ -164,6 +164,10 @@
   .case-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem;}
   .case-tags .tag{font-size:.75rem;font-weight:600;padding:.34rem .75rem;border-radius:999px;background:var(--surface-2);color:var(--muted);}
   .case-desc{margin-top:1.35rem;color:var(--muted);font-size:1.02rem;line-height:1.8;max-width:64ch;}
+  .sar-list{display:flex;flex-direction:column;gap:.6rem;margin-top:1.35rem;max-width:64ch;}
+  .sar-item{display:flex;align-items:flex-start;gap:.75rem;}
+  .sar-item .sar-label{flex-shrink:0;margin-top:.1rem;font-size:.72rem;font-weight:700;padding:.28rem .65rem;border-radius:999px;background:var(--surface-2);color:var(--muted);letter-spacing:.02em;}
+  .sar-item .sar-text{color:var(--muted);font-size:1rem;line-height:1.6;}
   .case-flow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.35rem;}
   .case-flow .step{padding:.5rem .95rem;border-radius:999px;background:var(--surface-2);font-size:.82rem;font-weight:700;}
   .case-flow .arrow{color:var(--muted-2);width:1rem;height:1rem;}
@@ -397,7 +401,11 @@
 
           <div class="sub-case">
             <h4 class="kr">① 가격 설계 — 시장·경쟁사 리서치</h4>
-            <p class="kr">Amazon 미국·UAE·일본과 쿠팡의 경쟁 가격을 분석해 목표 ROAS 2.5 기준 가격 구간을 검토하고, 클렌징밤·폼클렌저·세럼의 판매가 조정안을 제안했습니다.</p>
+            <ul class="sar-list kr">
+              <li class="sar-item"><span class="sar-label">S</span><span class="sar-text">목표 ROAS 2.5 확보를 위해 판매가 재설계 필요</span></li>
+              <li class="sar-item"><span class="sar-label">A</span><span class="sar-text">Amazon 미국·UAE·일본, 쿠팡 경쟁 제품 가격 분석 및 목표 가격 구간 검토</span></li>
+              <li class="sar-item"><span class="sar-label">R</span><span class="sar-text">클렌징밤·폼클렌저·세럼 판매가 조정안 제안, 실제 판매가 반영</span></li>
+            </ul>
             <div class="case-tags" style="margin-top:.9rem;">
               <span class="tag">Competitor Pricing</span>
               <span class="tag">Target ROAS 2.5</span>
@@ -433,7 +441,11 @@
               <div class="step">Compare</div><svg class="icon arrow" width="16" height="16"><use href="#i-arrow"/></svg>
               <div class="step">Expand / Test / Pause</div>
             </div>
-            <p class="kr">Amazon Search Term Report 분석으로 확대·신규 테스트·중단 키워드를 구분해 미국·UAE·일본 Amazon 광고 운영에 반영했습니다.</p>
+            <ul class="sar-list kr">
+              <li class="sar-item"><span class="sar-label">S</span><span class="sar-text">리브랜딩 이후 신규 키워드 성과 검증 필요</span></li>
+              <li class="sar-item"><span class="sar-label">A</span><span class="sar-text">Amazon Search Term Report 분석, 확대·신규 테스트·중단 키워드 구분</span></li>
+              <li class="sar-item"><span class="sar-label">R</span><span class="sar-text">미국·UAE·일본 Amazon 광고 운영에 반영</span></li>
+            </ul>
             <div class="collab-bar" style="margin-top:1.1rem;">
               <span class="collab-bar__label kr">개인 기여도</span>
               <div class="collab-bar__track"><div class="collab-bar__fill" style="width:80%"></div></div>
@@ -462,8 +474,11 @@
                 <div class="step">Paid Ads</div><svg class="icon arrow" width="16" height="16"><use href="#i-arrow"/></svg>
                 <div class="step">Amazon 유입 테스트</div>
               </div>
-              <p class="case-desc kr">K-푸드 브랜드 MAPDA의 'KIMCHIP!' UGC를 광고 소재로 2차 가공해 TikTok 크리에이티브를 제작하고, Amazon 유입 캠페인을 운영했습니다.</p>
-              <p class="case-desc kr" style="margin-top:.9rem;">구매 전환은 확인되지 않았습니다. TikTok의 폐쇄형 커머스 특성상 외부 전환에 한계가 있다고 판단했고, 이 판단을 다음 프로젝트인 HEEDA의 소재 전략에 반영했습니다.</p>
+              <ul class="sar-list kr">
+                <li class="sar-item"><span class="sar-label">S</span><span class="sar-text">MAPDA 'KIMCHIP!' 신규 광고 소재 및 Amazon 유입 채널 필요</span></li>
+                <li class="sar-item"><span class="sar-label">A</span><span class="sar-text">크리에이터 UGC 2차 가공, TikTok 크리에이티브 제작, Amazon 유입 캠페인 운영</span></li>
+                <li class="sar-item"><span class="sar-label">R</span><span class="sar-text">구매 전환 미확인 → TikTok 폐쇄형 커머스 한계로 판단, 다음 프로젝트(HEEDA) 소재 전략에 반영</span></li>
+              </ul>
               <div class="collab-bar">
                 <span class="collab-bar__label kr">개인 기여도</span>
                 <div class="collab-bar__track"><div class="collab-bar__fill" style="width:80%"></div></div>
@@ -499,7 +514,11 @@
               <h3 class="kr"><span class="brand">Mayacrew</span> — SOCAR · 네이버 상위노출 마케팅 캠페인 운영</h3>
             </div>
           </div>
-          <p class="case-desc kr">17개 캠페인, 54개 채널의 콘텐츠를 Google Sheets로 관리하며 SEO 키워드 전략을 운영했습니다.<br>네이버 검색 순위를 데이터로 추적해 콘텐츠 성과를 점검하고 개선했습니다.</p>
+          <ul class="sar-list kr">
+            <li class="sar-item"><span class="sar-label">S</span><span class="sar-text">네이버 검색 상위노출 콘텐츠 캠페인 필요</span></li>
+            <li class="sar-item"><span class="sar-label">A</span><span class="sar-text">17개 캠페인·54개 채널 콘텐츠 발행 관리(Google Sheets), SEO 키워드 전략 운영, 검색 순위 데이터 추적</span></li>
+            <li class="sar-item"><span class="sar-label">R</span><span class="sar-text">69건 중 58건 TOP3, 35건 1위 달성</span></li>
+          </ul>
           <div class="collab-bar">
             <span class="collab-bar__label kr">개인 기여도</span>
             <div class="collab-bar__track"><div class="collab-bar__fill" style="width:80%"></div></div>
@@ -533,7 +552,11 @@
                   <h3 class="kr"><span class="brand">Cloocus</span> — B2B Lead Generation · Microsoft 행사 운영 지원</h3>
                 </div>
               </div>
-              <p class="case-desc kr">Microsoft 유관 행사(Data &amp; AI Week, MS 365 Copilot Sprint 등) 운영을 지원하며,<br>참가자 설문을 기반으로 리드를 분류하고 결과 리포트를 작성했습니다.</p>
+              <ul class="sar-list kr">
+                <li class="sar-item"><span class="sar-label">S</span><span class="sar-text">Microsoft 유관 행사(Data &amp; AI Week, MS 365 Copilot Sprint 등) 리드 확보 필요</span></li>
+                <li class="sar-item"><span class="sar-label">A</span><span class="sar-text">행사 운영 지원, 참가자 설문 기반 리드 분류, 결과 리포트 작성</span></li>
+                <li class="sar-item"><span class="sar-label">R</span><span class="sar-text">68개 참여사 중 26개 후속 리드 발굴 (38%)</span></li>
+              </ul>
               <div class="collab-bar">
                 <span class="collab-bar__label kr">개인 기여도</span>
                 <div class="collab-bar__track"><div class="collab-bar__fill" style="width:50%"></div></div>
@@ -561,7 +584,11 @@
                   <h3 class="kr"><span class="brand">Cloocus</span> — AI 기반 업무 프로세스 자동화</h3>
                 </div>
               </div>
-              <p class="case-desc kr">기념품 관리 업무 프로세스의 자동화 프로토타입을 직접 설계·구현했습니다.<br>신청·재고 현황·반출 히스토리를 하나의 시스템으로 묶어 운영 단계를 줄이고 리소스를 절감했습니다.</p>
+              <ul class="sar-list kr">
+                <li class="sar-item"><span class="sar-label">S</span><span class="sar-text">기념품 관리 업무가 신청·재고·반출로 분산되어 비효율 발생</span></li>
+                <li class="sar-item"><span class="sar-label">A</span><span class="sar-text">자동화 프로토타입 직접 설계·구현, 신청·재고 현황·반출 히스토리를 하나의 시스템으로 통합</span></li>
+                <li class="sar-item"><span class="sar-label">R</span><span class="sar-text">운영 단계 축소, 리소스 절감</span></li>
+              </ul>
               <div class="collab-bar">
                 <span class="collab-bar__label kr">개인 기여도</span>
                 <div class="collab-bar__track"><div class="collab-bar__fill" style="width:100%"></div></div>
