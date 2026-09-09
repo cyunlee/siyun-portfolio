@@ -17,6 +17,10 @@ export default function middleware(request) {
     return rewrite(new URL('/influencer.html', request.url));
   }
 
+  if (host === 'siyunlee.vercel.app') {
+    return rewrite(new URL('/performance-marketer.html', request.url));
+  }
+
   // Any other host (e.g. the project's default *.vercel.app domain)
   // falls through to the normal static index.html.
 }
